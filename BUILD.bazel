@@ -1,5 +1,5 @@
 load("@gazelle//:def.bzl", "gazelle")
-# gazelle:prefix github.com/qhai-dev/kairo
+# gazelle:prefix github.com/qhai-dev/yato
 
 # gazelle:exclude deploy
 # gazelle:exclude devenv

@@ -11,7 +11,7 @@ proto_library(
 go_library(
     name = "test2",
     embed = [":v1_go_proto"],
-    importpath = "github.com/qhai-dev/kairo/backend/kapis/test2/v1",
+    importpath = "github.com/qhai-dev/yato/backend/kapis/test2/v1",
     visibility = ["//visibility:public"],
 )
 
@@ -21,7 +21,7 @@ go_proto_library(
         "@rules_go//proto:go_proto",
         "@rules_go//proto:go_grpc_v2",
     ],
-    importpath = "github.com/qhai-dev/kairo/backend/kapis/test2/v1",
+    importpath = "github.com/qhai-dev/yato/backend/kapis/test2/v1",
     proto = ":v1_proto",
     visibility = ["//visibility:public"],
 )

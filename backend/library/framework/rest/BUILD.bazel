@@ -1,0 +1,11 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "rest",
+    srcs = [
+        "client.go",
+        "server.go",
+    ],
+    importpath = "github.com/qhai-dev/yato/backend/library/framework/rest",
+    visibility = ["//visibility:public"],
+)

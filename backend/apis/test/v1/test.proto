@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package test.v1;
 
-option go_package = "github.com/qhai-dev/kairo/backend/kapis/test/v1";
+option go_package = "github.com/qhai-dev/yato/backend/kapis/test/v1";
 
 // The greeting service definition.
 service TestService {
