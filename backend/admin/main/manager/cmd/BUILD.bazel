@@ -5,6 +5,9 @@ go_library(
     srcs = ["main.go"],
     importpath = "github.com/qhai-dev/yato/backend/admin/main/manager/cmd",
     visibility = ["//visibility:private"],
+    deps = [
+        "//backend/apis/admin/main/manager/v1:manager_v1_go_proto",
+    ],
 )
 
 go_binary(

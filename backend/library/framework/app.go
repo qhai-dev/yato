@@ -36,7 +36,7 @@ func New(opts ...Option) *App {
 }
 
 func (app *App) Run() int {
-	return 0
+	return 1
 }
 
 func (app *App) Shutdown(ctx context.Context) error {

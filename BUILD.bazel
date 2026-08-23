@@ -1,4 +1,7 @@
 load("@gazelle//:def.bzl", "gazelle")
+load("@rules_go//proto:compiler.bzl", "go_proto_compiler")
+load("@rules_go//proto/wkt:well_known_types.bzl", "PROTO_RUNTIME_DEPS", "WELL_KNOWN_TYPES_APIV2")
+
 # gazelle:prefix github.com/qhai-dev/yato
 
 # gazelle:exclude deploy
@@ -8,4 +11,31 @@ load("@gazelle//:def.bzl", "gazelle")
 # gazelle:exclude infra
 gazelle(
     name = "gazelle",
+)
+
+go_proto_compiler(
+    name = "go_proto",
+    options = [
+        "paths=source_relative",
+    ],
+    plugin = "@org_golang_google_protobuf//cmd/protoc-gen-go",
+    suffix = ".pb.go",
+    visibility = ["//visibility:public"],
+    deps = PROTO_RUNTIME_DEPS,
+)
+
+go_proto_compiler(
+    name = "go_grpc",
+    options = [
+        "paths=source_relative",
+        "require_unimplemented_servers=false",
+    ],
+    plugin = "@org_golang_google_grpc_cmd_protoc_gen_go_grpc//:protoc-gen-go-grpc",
+    suffix = "_grpc.pb.go",
+    visibility = ["//visibility:public"],
+    deps = PROTO_RUNTIME_DEPS + [
+        "@org_golang_google_grpc//:go_default_library",
+        "@org_golang_google_grpc//codes:go_default_library",
+        "@org_golang_google_grpc//status:go_default_library",
+    ],
 )
