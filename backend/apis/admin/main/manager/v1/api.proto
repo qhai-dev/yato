@@ -1,0 +1,5 @@
+syntax = "proto3";
+
+package backend.apis.admin.main.manager.v1;
+
+option go_package = "github.com/qhai-dev/yato/backend/apis/admin/main/manager";

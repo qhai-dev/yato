@@ -412,7 +412,7 @@ CREATE TABLE audit_logs (
 ) PARTITION BY RANGE (occurred_at);
 ```
 
-按月分区。链式 hash 让事后审计能发现"中间有人改过日志"。`payload` 写之前过 `datapol` 的 redaction（已存在于 `backend/library/framework/logging/datapol`）。
+按月分区。链式 hash 让事后审计能发现"中间有人改过日志"。`payload` 写之前过 `datapol` 的 redaction（已存在于 `../../backend/library/framework/log/datapol`）。
 
 ### 5.3 Provisioning 表（6 张）
 

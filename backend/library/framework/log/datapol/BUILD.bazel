@@ -6,6 +6,6 @@ go_library(
         "datapol.go",
         "externaltypes.go",
     ],
-    importpath = "github.com/qhai-dev/yato/backend/library/framework/logging/datapol",
+    importpath = "github.com/qhai-dev/yato/backend/library/framework/log/datapol",
     visibility = ["//visibility:public"],
 )

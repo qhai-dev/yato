@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"os"
+
+	"github.com/qhai-dev/yato/backend/library/framework"
+)
 
 func main() {
-	fmt.Println("admin main manager http server")
+	app := framework.New(
+		framework.Name("admin.main.manager"),
+		framework.Version("v1.0.0"),
+	)
+
+	os.Exit(app.Run())
 }

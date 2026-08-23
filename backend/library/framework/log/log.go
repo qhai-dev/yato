@@ -1,4 +1,4 @@
-package logging
+package log
 
 import (
 	"io"
@@ -13,7 +13,6 @@ import (
 )
 
 var (
-	// timeNow stubbed out for testing
 	timeNow = time.Now
 )
 
@@ -103,7 +102,7 @@ func epochMillisTimeEncoder(_ time.Time, enc zapcore.PrimitiveArrayEncoder) {
 // 	// therefore we don't need to flush, and calling the underlying fsync
 // 	// would just slow down writing.
 // 	//
-// 	// The assumption is that logging only needs to ensure that data gets
+// 	// The assumption is that log only needs to ensure that data gets
 // 	// written to the output stream before the process terminates, but
 // 	// doesn't need to worry about data not being written because of a
 // 	// system crash or powerloss.

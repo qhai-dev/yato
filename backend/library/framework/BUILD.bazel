@@ -5,7 +5,6 @@ go_library(
     srcs = [
         "app.go",
         "options.go",
-        "runner.go",
         "transport.go",
     ],
     importpath = "github.com/qhai-dev/yato/backend/library/framework",

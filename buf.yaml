@@ -7,6 +7,6 @@ breaking:
   use:
     - FILE
 modules:
-  - path: backend/kapis
+  - path: backend/apis
 deps:
   - buf.build/bufbuild/protovalidate
