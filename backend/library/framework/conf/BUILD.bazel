@@ -9,8 +9,8 @@ go_library(
     importpath = "github.com/qhai-dev/yato/backend/library/framework/conf",
     visibility = ["//visibility:public"],
     deps = [
-        "@com_github_spf13_viper//:viper",
-        "@com_github_spf13_viper_remote//:remote",
-        "@io_etcd_go_etcd_client_v3//:client",
+        "@com_github_spf13_viper//:go_default_library",
+        "@com_github_spf13_viper_remote//:go_default_library",
+        "@io_etcd_go_etcd_client_v3//:go_default_library",
     ],
 )

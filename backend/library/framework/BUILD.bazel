@@ -1,0 +1,17 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "framework",
+    srcs = [
+        "app.go",
+        "options.go",
+        "runner.go",
+        "transport.go",
+    ],
+    importpath = "github.com/qhai-dev/yato/backend/library/framework",
+    visibility = ["//visibility:public"],
+    deps = [
+        "@com_github_spf13_viper//:go_default_library",
+        "@org_golang_google_grpc//:grpc",
+    ],
+)

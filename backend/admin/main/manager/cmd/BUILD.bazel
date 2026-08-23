@@ -1,0 +1,14 @@
+load("@rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "cmd_library",
+    srcs = ["main.go"],
+    importpath = "github.com/qhai-dev/yato/backend/admin/main/manager/cmd",
+    visibility = ["//visibility:private"],
+)
+
+go_binary(
+    name = "cmd",
+    embed = [":cmd_library"],
+    visibility = ["//visibility:public"],
+)

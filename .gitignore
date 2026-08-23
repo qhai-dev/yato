@@ -96,6 +96,6 @@ bazel-*
 # mdbook
 **/book
 
-**/terraform
+**/.terraform
 
 .idea

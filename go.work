@@ -1,6 +1,5 @@
 go 1.26.4
 
 use (
-	./backend/apis
-	./backend/library/framework
+	./backend/admin/main/manager
 )
