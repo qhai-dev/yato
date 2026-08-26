@@ -2,6 +2,7 @@ package framework
 
 import (
 	"context"
+	"fmt"
 	"net/http"
 	"sync"
 
@@ -36,6 +37,8 @@ func New(opts ...Option) *App {
 }
 
 func (app *App) Run() int {
+
+	fmt.Print("hello world")
 	return 1
 }
 

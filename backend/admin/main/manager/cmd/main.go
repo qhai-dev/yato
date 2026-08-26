@@ -1,23 +1,16 @@
 package main
 
 import (
-	"fmt"
+	"os"
 
-	"github.com/qhai-dev/yato/backend/apis/admin/main/manager/v1"
+	"github.com/qhai-dev/yato/backend/library/framework"
 )
 
 func main() {
-	//app := framework.New(
-	//	framework.Name("admin.main.manager"),
-	//	framework.Version("v1.0.0"),
-	//)
-	//code := app.Run()
-	//os.Exit(code)
+	app := framework.New(
+		framework.Name("admin.main.manager"),
+		framework.Version("v1.0.0"),
+	)
 
-	user := manager.User{
-		Id:       1,
-		NickName: "yato",
-	}
-
-	fmt.Printf("%+v", &user)
+	os.Exit(app.Run())
 }

@@ -1,0 +1,8 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "sso",
+    srcs = ["sso.go"],
+    importpath = "github.com/qhai-dev/yato/backend/admin/main/manager/pkg/sso",
+    visibility = ["//visibility:public"],
+)

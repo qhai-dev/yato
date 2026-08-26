@@ -10,7 +10,7 @@ go_library(
     importpath = "github.com/qhai-dev/yato/backend/library/framework",
     visibility = ["//visibility:public"],
     deps = [
-        "@com_github_spf13_viper//:go_default_library",
+        "@com_github_spf13_viper//:viper",
         "@org_golang_google_grpc//:grpc",
     ],
 )
