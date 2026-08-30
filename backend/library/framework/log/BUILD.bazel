@@ -6,9 +6,9 @@ go_library(
     importpath = "github.com/qhai-dev/yato/backend/library/framework/log",
     visibility = ["//visibility:public"],
     deps = [
-        "@com_github_go_logr_logr//:logr",
-        "@com_github_go_logr_zapr//:zapr",
-        "@org_uber_go_zap//:zap",
-        "@org_uber_go_zap//zapcore",
+        "@com_github_go_logr_logr//:go_default_library",
+        "@com_github_go_logr_zapr//:go_default_library",
+        "@org_uber_go_zap//:go_default_library",
+        "@org_uber_go_zap//zapcore:go_default_library",
     ],
 )

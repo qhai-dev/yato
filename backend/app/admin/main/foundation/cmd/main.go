@@ -8,7 +8,7 @@ import (
 
 func main() {
 	app := framework.New(
-		framework.Name("admin.main.manager"),
+		framework.Name("admin.main.foundation"),
 		framework.Version("v1.0.0"),
 	)
 
