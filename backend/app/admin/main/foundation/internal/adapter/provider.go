@@ -1,4 +1,4 @@
-package api
+package adapter
 
 import "github.com/google/wire"
 
