@@ -1,0 +1,1 @@
+common --@rules_terraform//terraform/settings:version=1.16.2
