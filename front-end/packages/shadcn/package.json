@@ -1,7 +1,7 @@
 {
     "name": "@kairo/shadcn",
     "private": true,
-    "main": "./src/index.ts",
+    "main": "src/index.ts",
     "exports": {
         ".": "./src/index.ts",
         "./styles.css": "./src/styles.css"

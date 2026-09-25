@@ -10,7 +10,7 @@ import {
 } from "@yato/shadcn"
 import { useLocale, Locale } from "next-intl"
 
-import { languages, languageMap } from "@/layers/shared/i18n"
+import { languages, languageMap } from "../../../shared/i18n"
 
 type Props = {
     action: (locale: Locale) => Promise<void>
