@@ -1,5 +1,4 @@
 {
-    "name": "yato",
     "private": true,
     "packageManager": "pnpm@11.9.0"
 }
