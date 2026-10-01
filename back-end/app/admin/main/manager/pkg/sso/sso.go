@@ -1,5 +1,0 @@
-package sso
-
-func New() {
-
-}
