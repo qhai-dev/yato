@@ -25,9 +25,3 @@ bazel_dep(name = "rules_terraform", version = "0.0.2")
 
 # shell
 bazel_dep(name = "rules_shell", version = "0.8.0")
-
-# zig
-bazel_dep(name = "rules_zig", version = "0.16.0")
-
-zig = use_extension("@rules_zig//zig:extensions.bzl", "zig")
-zig.toolchain(zig_version = "0.16.0")
