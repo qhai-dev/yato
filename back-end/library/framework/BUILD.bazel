@@ -1,0 +1,13 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "framework",
+    srcs = [
+        "app.go",
+        "options.go",
+        "transport.go",
+    ],
+    importpath = "github.com/qhai-dev/yato/back-end/library/framework",
+    visibility = ["//visibility:public"],
+    deps = [],
+)

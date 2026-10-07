@@ -1,0 +1,11 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datapol",
+    srcs = [
+        "datapol.go",
+        "externaltypes.go",
+    ],
+    importpath = "github.com/qhai-dev/yato/back-end/library/framework/log/datapol",
+    visibility = ["//visibility:public"],
+)
